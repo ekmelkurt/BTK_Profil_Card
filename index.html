@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTK_Erzurum Profil_Card</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Style the body */
+        body {
+            font-family: Arial;
+            margin: 0;
+            background-color: bisque;
+        }
+
+        /* Header/logo Title */
+        .header {
+            padding: 30px;
+            text-align: center;
+            background: #4b5250;
+            color: white;
+        }
+
+        /* Column container */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* Create two unequal columns that sits next to each other */
+        /* Sidebar/left column */
+        .side {
+            flex: 10%;
+            background-color: bisque;
+            padding: 20px;
+        }
+
+        /* Main column */
+        .main {
+            flex: 70%;
+            background-color: rgb(231, 223, 182);
+            padding: 20px;
+        }
+
+
+        /* Footer */
+        .footer {
+            padding: 16px;
+            text-align: center;
+            background: #ddd;
+        }
+
+        /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 700px) {
+
+            .row,
+            .navbar {
+                flex-direction: column;
+            }
+        }
+
+        nav {
+            width: 20%;
+            float: left;
+            margin-top: 10px;
+            height: auto;
+        }
+
+        nav ul {
+            width: 100%;
+            height: auto;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        nav li {
+            list-style-type: none;
+            text-align: center;
+            padding-top: 20px;
+            font-size: 20px;
+            background-color: rgb(180, 211, 129)
+        }
+
+        nav li a {
+            height: 30px;
+            line-height: 30px;
+            text-decoration: none;
+            color: rgb(11, 50, 77);
+            border-bottom: 1px solid #b4b4b4;
+            padding-left: 20px;
+            display: block;
+
+        }
+
+        nav li a:hover {
+            color: rgb(209, 125, 57);
+            background-color: #2b2926;
+        }
+
+        div#kutukapla {
+
+            border: 2px solid rgb(48, 23, 48);
+            margin: auto;
+            display: flex;
+            /*direction: rtl;*/
+            /* flex-direction: column;*/
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        div.kutu {
+            padding: 20px;
+            width: 290px;
+            height: 560px;
+            color: rgb(29, 28, 28);
+            margin: 5px;
+            text-align: center;
+            font-size: 20px;
+            background-color: rgb(243, 184, 129);
+            line-height: 50px;
+            /* text-decoration-line: underline;*/
+            /* text-decoration-color: rgb(25, 43, 7);*/
+
+        }
+
+
+        div.kutu:hover {
+            background-color: rgb(238, 240, 125);
+        }
+
+        #head {
+            border: 5px solid rgb(245, 195, 104);
+            border-radius: 40px;
+            text-align: center;
+            background-color: rgb(76, 94, 48);
+            color: rgb(191, 194, 165);
+            font-size: 35px;
+            margin: 20px 10px 30px 10px;
+
+        }
+
+        img {
+            width: 250px;
+            height: 250px;
+            border-radius: 150px 150px 150px 150px;
+            padding: 20px;
+            box-sizing: border-box;
+            border: 10px double rgb(70, 40, 40);
+            background-color: rgb(228, 206, 159);
+
+        }
+
+
+        p {
+            color: rgb(78, 68, 12);
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-decoration-line: underline;
+        }
+
+        span {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border: 2px solid rgb(15, 10, 10);
+            border-radius: 30px;
+            background-color: darkolivegreen;
+            padding: 5px;
+            color: darksalmon;
+            font-size: 21px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Header -->
+    <div class="header">
+        <h1>
+            <header id="head">BTK Erzurum İlk Öğrencileri</header>
+        </h1>
+    </div>
+
+    <!-- Navigation Bar -->
+
+    <!-- The flexible grid (content) -->
+
+    <div class="row">
+        <nav class="side row">
+            <div class="side">
+                <div class="kutu"><img class="imge" src="image/enes.jpg"> <br><span>Enes POLAT</span>
+                    <p>KTU </p>
+                    <li><a href="https://github.com/enespolat25" target="_blank">GitHub</a></li>
+                    <li><a href="https://instagram.com/polat_enes_?igshid=YmMyMTA2M2Y=" target="_blank">İnstagram</a>
+                    </li>
+                    <li><a href="#">Linkedln</a></li>
+                </div>
+               
+            </div>
+            <div id="kutukapla" class="main">
+                <div class="kutu"><img class="img" src="image/eyüp.jpg"> <br><span>Eyyüp Fethi Müjdeci</span>
+                    <p>Atatürk Üniversitesi </p>
+                    <li><a href="https://github.com/eyyup25" target="_blank">GitHub</a></li>
+                    <li><a href="https://instagram.com/eyyup_mujdeci?igshid=YmMyMTA2M2Y=" target="_blank">İnstagram</a>
+                    </li>
+                    <li><a href="#">Linkedln</a></li>
+
+                </div>
+                <div class="kutu"><img class="img" src="image/özge.jpg"><br><span> Özgenur Kaplan</span>
+                    <p>Atatürk Üniversitesi</p>
+                    <li><a href="https://github.com/ozgekpln" target="_blank">GitHub</a></li>
+                    <li><a href="https://instagram.com/ozzikulus?igshid=YmMyMTA2M2Y=" target="_blank">İnstagram</a></li>
+                    <li><a href="#">Linkedln</a></li>
+                </div>
+                <div class="kutu"><img class="img" src="image/miraç.jpg"> <br><span> Miraç Sancı</span>
+                    <p>Erzurum Teknik Üniversitesi</p>
+                    <li><a href="https://github.com/Miracsanci" target="_blank">GitHub</a></li>
+                    <li><a href="https://instagram.com/mirac.sanci?igshid=YmMyMTA2M2Y=" target="_blank">İnstagram</a>
+                    </li>
+                    <li><a href="#">Linkedln</a></li>
+                </div>
+               
+                <div class="kutu"><img class="img" src="image/elif.jpg"><br><span> Elif Beyza Köftegül</span>
+                    <p>Atatürk Üniversitesi</p>
+                    <li><a href="https://github.com/Elfbyzkftgl" target="_blank">GitHub</a></li>
+                    <li><a href=https://github.com/eyyup25/turkiyesehirleri target="_blank">İnstagram</a></li>
+                    <li><a href="#">Linkedln</a></li>
+                </div>
+                <div class="kutu"><img class="img" src="image/ekmel.jpg"><br><span> Ekmel Kurt</span>
+                    <p>Atatürk Üniversitesi</p>
+                    <li><a href="https://github.com/ekmelkurt" target="_blank">GitHub</a></li>
+                    <li><a href="https://instagram.com/ekmelkurt?igshid=YmMyMTA2M2Y=" i target="_blank">İnstagram</a>
+                    </li>
+                    <li><a href="#">Linkedln</a></li>
+                </div>
+                <div class="kutu"><img class="img" src="image/hakan.jpg"><br><span> Hakan Tercanlı</span>
+                    <p>Atatürk Üniversitesi</p>
+                    <li><a href="https://github.com/HaKaN190" target="_blank">GitHub</a></li>
+                    <li><a href="https://instagram.com/hakantrcnl?igshid=YmMyMTA2M2Y=" target="_blank">İnstagram</a>
+                    </li>
+                    <li><a href="#">Linkedln</a></li>
+                </div>
+                <div class="kutu"><img class="img" src="image/umut.jpg"><br><span>Umut Topalak</span>
+                    <p>Atatürk Üniversitesi</p>
+                    <li><a href="https://github.com/umuttopalak" target="_blank">GitHub</a></li>
+                    <li><a href="https://instagram.com/umuttopalak?igshid=YmMyMTA2M2Y=" target="_blank">İnstagram</a>
+                    </li>
+                    <li><a href="#">Linkedln</a></li>
+                </div>
+                <div class="kutu"><img class="img" src="image/ömer.jpg"><br><span> Ömer Gündüz</span>
+                    <p>Atatürk Üniversitesi</p>
+                    <li><a href="https://github.com/omergndz25" target="_blank">GitHub</a></li>
+                    <li><a href="https://instagram.com/omergndz25?igshid=YmMyMTA2M2Y=" target="_blank">İnstagram</a>
+                    </li>
+                    <li><a href="#">Linkedln</a></li>
+                </div>
+                <div class="kutu"><img class="img" src="image/şeyma.jpg"><br><span> Şeymanur Akbaş</span>
+                    <p>Atatürk Üniversitesi</p>
+                    <li><a href="https://github.com/symakbs25" target="_blank">GitHub</a></li>
+                    <li><a href="https://instagram.com/s.akbas9?igshid=YmMyMTA2M2Y=" target="_blank">İnstagram</a></li>
+                    <li><a href="#">Linkedln</a></li>
+                </div>
+                <div class="kutu"><img class="img" src="image/nurullah.jpg"><br><span> Nurullah Işık</span>
+                    <p>Atatürk Üniversitesi</p>
+                    <li><a href="https://github.com/nurullah-isik1" target="_blank">GitHub</a></li>
+                    <li><a href="https://instagram.com/nurullah.1598?igshid=YmMyMTA2M2Y=" target="_blank">İnstagram</a>
+                    </li>
+                    <li><a href="#">Linkedln</a></li>
+                </div>
+               
+                <div class="kutu"><img class="img" src="image/zeynep.jpg"><br><span> Zeynep Çevik</span>
+                    <p>Atatürk Üniversitesi</p>
+                    <li><a href="https://github.com/zzeynepcvk" target="_blank">GitHub</a></li>
+                    <li><a href=https://github.com/eyyup25/turkiyesehirleri>İnstagram</a></li>
+                    <li><a href="#">Linkedln</a></li>
+                </div>
+                <div class="kutu"><img class="img" src="image/melik.jpg"><br><span> Melik Karaca</span>
+                    <p>Atatürk Üniversitesi</p>
+                    <li><a href="https://github.com/mkaraca25" target="_blank">GitHub</a></li>
+                    <li><a href="https://instagram.com/cmpemkaraca?igshid=YmMyMTA2M2Y=" target="_blank">İnstagram</a>
+                    </li>
+                    <li><a href="#">Linkedln</a></li>
+                </div>
+               
+                <div class="kutu"><img class="img" src="image/gamze.jpg"><br><span> Gamze Aktaş</span>
+                    <p>Atatürk Üniversitesi</p>
+                    <li><a href="https://github.com/gamzeaktass" target="_blank">GitHub</a></li>
+                    <li><a href="https://instagram.com/gamzeaktas.1?igshid=YmMyMTA2M2Y=" target="_blank">İnstagram</a>
+                    </li>
+                    <li><a href="#">Linkedln</a></li>
+                </div>
+                <div class="kutu"><img class="img" src="image/erdem.jpg"><br><span> Erdem Dayan</span>
+                    <p>Atatürk Üniversitesi</p>
+                    <li><a href="https://github.com/eridiemmm2525" target="_blank">GitHub</a></li>
+                    <li><a href="https://instagram.com/eridiemmm2525?igshid=YmMyMTA2M2Y=" target="_blank">İnstagram</a>
+                    </li>
+                    <li><a href="#">Linkedln</a></li>
+                </div>
+                <div class="kutu"><img class="img" src="image/ceylan.jpg"><br><span> Ceylan Sarıkaya</span>
+                    <p>Atatürk Üniversitesi</p>
+                    <li><a href="https://github.com/ceylanSarikaya" target="_blank">GitHub</a></li>
+                    <li><a href="https://instagram.com/ce_ceyyy?igshid=YmMyMTA2M2Y=" target="_blank">İnstagram</a></li>
+                    <li><a href=#>Linkedln</a></li>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <footer class="footer" style="text-align: center; background-color: rgb(236, 168, 103); font-size: 25px;">
+        Powered by Ekmel KURT
+        &copy; 2022 BTK ERZURUM
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
